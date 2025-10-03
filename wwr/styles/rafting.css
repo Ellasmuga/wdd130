@@ -1,0 +1,146 @@
+root {
+    --primary-color: #1e3a8a;   /* deep blue */
+    --secondary-color: #3b82f6; /* bright blue */
+    --accent1-color: #facc15;   /* golden yellow */
+    --accent2-color: #ffffff;   /* white */
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #333;
+    background-color: #f4f8ff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 80px;   /* smaller logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    max-height: 350px;  /* reduced hero size */
+    object-fit: cover;  /* crops instead of stretching */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1.5rem;  /* smaller text */
+    background-color: rgba(30, 58, 138, 0.7);
+    color: var(--accent2-color);
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 250px;
+    font-size: 0.85rem;
+}
+
+.hero article img {
+    width: 60px;   /* smaller client image */
+    height: 60px;
+    float: right;
+    margin-left: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 7. Sections */
+main section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 700px;  /* narrower */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+/* 8. Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.socialmedia img {
+    width: 24px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.15);
+}
