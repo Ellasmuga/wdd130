@@ -29,14 +29,12 @@
     <p>White Water Rafting Adventures</p>
     <p>65 Hiltop Road Abakaliki Ebonyi State.</p>
     <p>Phone: 09115784981</p>
-    <p>Email: <a href="ogbuaguemmanuella989@gmail.com">ogbuaguemmanuella989@gmail.com</a></p>
+    <p>Email: <p>Email us at <a href="mailto:ogbuaguemmanuella989@gmail.com">ogbuaguemmanuella989@gmail.com</a></p>
+
 
     <!-- Google Map -->
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3965.495777945258!2d8.119651374044736!3d6.329748125386528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1759759492319!5m2!1sen!2sng"
-       width="600" 
-       height="450"
-        style="border:0;"
          allowfullscreen=""
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
@@ -61,32 +59,40 @@
       </figure>
     </div>
   </section>
+    <section class="contact-form">
+  <h3>Send Us a Message</h3>
+  <form>
+    <!-- Name -->
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-  <!-- Contact Form -->
-  <section class="contact-form">
-    <h2>Send Us a Message</h2>
-    <form action="thankyou.html" method="post">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
+    <!-- Email -->
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
+    <!-- Purpose -->
+    <p>Purpose of Message:</p>
+    <input type="radio" id="general" name="purpose" value="general">
+    <label for="general">General Inquiry</label><br>
 
-      <fieldset>
-        <legend>Purpose of Message</legend>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-      </fieldset>
+    <input type="radio" id="reservation" name="purpose" value="reservation">
+    <label for="reservation">Reservation Question</label><br>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+    <label for="suggestion">Website Suggestion</label>
 
-      <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+    <!-- Message -->
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Newsletter Checkbox -->
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Send Message</button>
+  </form>
+</section>
 </main>
 
     <footer>
